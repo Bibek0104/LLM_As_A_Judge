@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #f4f6f8;
+
+    color: #222;
+}
+
+
+.container {
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 40px auto;
+}
+
+
+h1 {
+    text-align: center;
+
+    margin-bottom: 5px;
+}
+
+
+.subtitle {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+
+section {
+    background: white;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+h2 {
+    margin-top: 0;
+
+    border-bottom: 1px solid #ddd;
+
+    padding-bottom: 10px;
+}
+
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+
+textarea {
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+
+button {
+    padding: 12px 22px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #333;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    background: #555;
+}
+
+
+#login-message {
+    margin-top: 15px;
+
+    font-weight: bold;
+}
+
+
+#agent-response {
+    background: #f7f7f7;
+
+    padding: 15px;
+
+    border-radius: 6px;
+
+    white-space: pre-wrap;
+
+    line-height: 1.6;
+}
+
+
+#judge-response {
+    line-height: 1.6;
+}
+
+
+.score {
+    padding: 15px;
+
+    margin-bottom: 15px;
+
+    background: #f7f7f7;
+
+    border-left: 4px solid #333;
+
+    border-radius: 5px;
+}
+
+
+.score h3 {
+    margin-top: 0;
+}
+
+
+#agent-metrics,
+#judge-metrics {
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: #f1f3f5;
+
+    border-radius: 6px;
+}
+
+
+.history-item {
+    padding: 18px;
+
+    margin-bottom: 15px;
+
+    background: #f7f7f7;
+
+    border-radius: 6px;
+
+    border-left: 4px solid #555;
+}
+
+
+.history-item h3 {
+    margin-top: 0;
+}
+
+
+.history-item p {
+    margin: 7px 0;
+}
+
+
+#logout-section {
+    text-align: right;
+
+    background: transparent;
+
+    box-shadow: none;
+
+    padding: 0;
+}
+
+/* ============================= */
+/* LOADING SPINNER */
+/* ============================= */
+
+#loading {
+    text-align: center;
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    background: #f7f7f7;
+
+    border-radius: 8px;
+}
+
+
+.spinner {
+    width: 40px;
+
+    height: 40px;
+
+    margin: 0 auto 15px;
+
+    border: 5px solid #ddd;
+
+    border-top: 5px solid #333;
+
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}

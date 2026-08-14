@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>LLM Judge</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>LLM Judge</h1>
+
+        <p class="subtitle">
+            LLM Evaluation and Monitoring System
+        </p>
+
+
+        <!-- ============================= -->
+        <!-- LOGIN SECTION -->
+        <!-- ============================= -->
+
+        <section id="login-section">
+
+            <h2>Login</h2>
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Username"
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Password"
+            >
+
+            <button onclick="login()">
+                Login
+            </button>
+
+            <p id="login-message"></p>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- PROMPT SECTION -->
+        <!-- ============================= -->
+
+        <section id="prompt-section"
+                 style="display: none;">
+
+            <h2>Ask LLM</h2>
+
+            <textarea
+                id="prompt"
+                placeholder="Enter your prompt..."
+            ></textarea>
+
+            <button onclick="runJudge()">
+                Run
+            </button>
+
+            <div id="loading" style="display: none;">
+
+                <div class="spinner"></div>
+
+                <p>
+                    Judge is processing...
+                </p>
+
+                <p>
+                    Elapsed time:
+                    <span id="elapsed-time">0</span> seconds
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- LLM RESPONSE -->
+        <!-- ============================= -->
+
+        <section id="agent-section"
+                 style="display: none;">
+
+            <h2>LLM Response</h2>
+
+            <div id="agent-response"></div>
+
+            <div id="agent-metrics"></div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- JUDGE RESPONSE -->
+        <!-- ============================= -->
+
+        <section id="judge-section"
+                 style="display: none;">
+
+            <h2>Judge Evaluation</h2>
+
+            <div id="judge-response"></div>
+
+            <div id="judge-metrics"></div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- PREVIOUS EVALUATIONS -->
+        <!-- ============================= -->
+
+        <section id="history-section"
+                 style="display: none;">
+
+            <h2>Previous Evaluations</h2>
+
+            <div id="history"></div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- LOGOUT -->
+        <!-- ============================= -->
+
+        <section id="logout-section"
+                 style="display: none;">
+
+            <button onclick="logout()">
+                Logout
+            </button>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
